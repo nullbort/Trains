@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Speaker)(type KiCad)(uri /home/nullbort/KiCad/library/Speaker.pretty)(options "")(descr ""))
+  (lib (name Module)(type KiCad)(uri /home/nullbort/KiCad/library/Module.pretty)(options "")(descr ""))
+)
