@@ -1,0 +1,48 @@
+(export (version D)
+  (design
+    (source "/home/nullbort/KiCad/Trains v2/Tanker/Tanker.sch")
+    (date "Fri 04 May 2018 07:57:42 AM EDT")
+    (tool "Eeschema 5.0.0-rc2-dev-unknown-1ac905d~64~ubuntu16.04.1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source Tanker.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref MK2)
+      (value Mounting_Hole_PAD)
+      (footprint Pin_Headers:Pin_Header_Angled_1x01_Pitch2.54mm)
+      (libsource (lib Mechanical) (part Mounting_Hole_PAD))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5AC08F36))
+    (comp (ref MK1)
+      (value Mounting_Hole_PAD)
+      (footprint Pin_Headers:Pin_Header_Angled_1x01_Pitch2.54mm)
+      (libsource (lib Mechanical) (part Mounting_Hole_PAD))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5AC08F74)))
+  (libparts
+    (libpart (lib Mechanical) (part Mounting_Hole_PAD)
+      (description "Mounting Hole with connection")
+      (footprints
+        (fp Mounting?Hole*)
+        (fp Hole*))
+      (fields
+        (field (name Reference) MK)
+        (field (name Value) Mounting_Hole_PAD))
+      (pins
+        (pin (num 1) (name 1) (type input)))))
+  (libraries
+    (library (logical Mechanical)
+      (uri /home/nullbort/KiCad/kicad-library-master/library/Mechanical.lib)))
+  (nets
+    (net (code 1) (name "Net-(MK2-Pad1)")
+      (node (ref MK2) (pin 1)))
+    (net (code 2) (name "Net-(MK1-Pad1)")
+      (node (ref MK1) (pin 1)))))

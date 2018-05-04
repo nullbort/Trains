@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source "/home/nullbort/KiCad/Trains v2/Trains v2.sch")
-    (date "Thu 03 May 2018 09:49:23 AM EDT")
-    (tool "Eeschema 5.0.0-rc2-dev-unknown-62522ee~64~ubuntu16.04.1")
+    (date "Fri 04 May 2018 11:31:00 AM EDT")
+    (tool "Eeschema 5.0.0-rc2-dev-unknown-1ac905d~64~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -19,7 +19,7 @@
       (value Arduino_Nano_v3.x)
       (footprint Module:Arduino_Nano)
       (datasheet http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf)
-      (libsource (lib MCU_Module) (part Arduino_Nano_v3.x))
+      (libsource (lib Trains-v2-rescue) (part Arduino_Nano_v3.x-MCU_Module))
       (sheetpath (names /) (tstamps /))
       (tstamp 5AA298B3))
     (comp (ref LS1)
@@ -102,7 +102,7 @@
       (tstamp 5AB585F3))
     (comp (ref SW1)
       (value SW_SPST4)
-      (footprint Buttons_Switches_THT:SW_CuK_JS202011AQN_DPDT_Angled)
+      (footprint Buttons_Switches_THT:SW_CuK_JS202011CQN_DPDT_Straight)
       (libsource (lib sw_spst) (part SW_SPST4))
       (sheetpath (names /) (tstamps /))
       (tstamp 5AB5CD07))
@@ -161,16 +161,22 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5AEB1FF9)))
   (libparts
-    (libpart (lib MCU_Module) (part Arduino_Nano_v3.x)
-      (aliases
-        (alias Arduino_Nano_v2.x))
-      (description "Arduino Nano v3.x")
-      (docs http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf)
+    (libpart (lib Mechanical) (part Mounting_Hole_PAD)
+      (description "Mounting Hole with connection")
+      (footprints
+        (fp Mounting?Hole*)
+        (fp Hole*))
+      (fields
+        (field (name Reference) MK)
+        (field (name Value) Mounting_Hole_PAD))
+      (pins
+        (pin (num 1) (name 1) (type input))))
+    (libpart (lib Trains-v2-rescue) (part Arduino_Nano_v3.x-MCU_Module)
       (footprints
         (fp Arduino*Nano*))
       (fields
         (field (name Reference) A)
-        (field (name Value) Arduino_Nano_v3.x)
+        (field (name Value) Arduino_Nano_v3.x-MCU_Module)
         (field (name Footprint) Module:Arduino_Nano))
       (pins
         (pin (num 1) (name D1/TX) (type BiDi))
@@ -203,16 +209,6 @@
         (pin (num 28) (name RESET) (type input))
         (pin (num 29) (name GND) (type power_in))
         (pin (num 30) (name VIN) (type power_in))))
-    (libpart (lib Mechanical) (part Mounting_Hole_PAD)
-      (description "Mounting Hole with connection")
-      (footprints
-        (fp Mounting?Hole*)
-        (fp Hole*))
-      (fields
-        (field (name Reference) MK)
-        (field (name Value) Mounting_Hole_PAD))
-      (pins
-        (pin (num 1) (name 1) (type input))))
     (libpart (lib device) (part LED_CRGB)
       (description "LED RGB, Common Cathode")
       (docs ~)
@@ -254,10 +250,10 @@
         (pin (num 1) (name A) (type input))
         (pin (num 4) (name B) (type input)))))
   (libraries
-    (library (logical MCU_Module)
-      (uri /home/nullbort/KiCad/library/MCU_Module/MCU_Module.lib))
     (library (logical Mechanical)
       (uri /home/nullbort/KiCad/kicad-library-master/library/Mechanical.lib))
+    (library (logical Trains-v2-rescue)
+      (uri "/home/nullbort/KiCad/Trains v2/Trains v2-rescue.lib"))
     (library (logical device)
       (uri /home/nullbort/KiCad/kicad-library-master/library/device.lib))
     (library (logical sw_spst)

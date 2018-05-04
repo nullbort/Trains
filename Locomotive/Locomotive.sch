@@ -30,7 +30,7 @@ L Mechanical:Mounting_Hole_PAD MK2
 U 1 1 5AB6979B
 P 3375 4825
 F 0 "MK2" H 3275 4783 50  0000 R CNN
-F 1 "2" H 3275 4874 50  0000 R CNN
+F 1 "GND" H 3275 4874 50  0000 R CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x01_Pitch2.54mm" H 3375 4825 50  0001 C CNN
 F 3 "" H 3375 4825 50  0001 C CNN
 	1    3375 4825
@@ -64,4 +64,8 @@ Wire Wire Line
 	2675 4350 3075 4350
 Wire Wire Line
 	3375 4350 3375 4725
+Text Label 2375 4550 0    50   ~ 0
+VCC
+Text Label 3375 4625 0    50   ~ 0
+GND
 $EndSCHEMATC
