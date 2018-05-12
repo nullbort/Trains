@@ -2,10 +2,10 @@
 
   (general
     (thickness 1.6)
-    (drawings 1490)
+    (drawings 1486)
     (tracks 0)
     (zones 0)
-    (modules 6)
+    (modules 8)
     (nets 5)
   )
 
@@ -106,6 +106,20 @@
     (add_net /VCC)
     (add_net "Net-(D1-Pad2)")
     (add_net "Net-(D2-Pad2)")
+  )
+
+  (module Markings:LED_1206 (layer F.Cu) (tedit 5AEC1F2E) (tstamp 5AEC1F7D)
+    (at 34.54 54.01)
+    (fp_text reference REF** (at 0.1 2.91) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value LED_1206 (at 0.06 -4.56) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user ▲ (at 0 -0.02) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -0.43 -0.43) (end 0.43 -0.43) (layer F.SilkS) (width 0.15))
   )
 
   (module LEDs:LED_1206_HandSoldering (layer F.Cu) (tedit 5AEC15B4) (tstamp 5AEC15BD)
@@ -366,14 +380,20 @@
     )
   )
 
-  (gr_text ▲ (at 34.55 54.06) (layer F.SilkS) (tstamp 5AEC1C2C)
-    (effects (font (size 1 1) (thickness 0.25)))
+  (module Markings:LED_1206 (layer F.Cu) (tedit 5AEC1F2E) (tstamp 5AEC1F47)
+    (at 7.22 54.02)
+    (fp_text reference REF** (at 0.1 2.91) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value LED_1206 (at 0.06 -4.56) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -0.43 -0.43) (end 0.43 -0.43) (layer F.SilkS) (width 0.15))
+    (fp_text user ▲ (at 0 -0.02) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
   )
-  (gr_line (start 34.1 53.64) (end 35 53.64) (layer F.SilkS) (width 0.2) (tstamp 5AEC1C2B))
-  (gr_line (start 6.8 53.61) (end 7.7 53.61) (layer F.SilkS) (width 0.2) (tstamp 5AEC1B89))
-  (gr_text ▲ (at 7.25 54.03) (layer F.SilkS) (tstamp 5AEC1B88)
-    (effects (font (size 1 1) (thickness 0.25)))
-  )
+
   (gr_line (start 0.466751 61.980734) (end 0.458561 61.978588) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 0.474503 61.983158) (end 0.466751 61.980734) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 0.481823 61.985867) (end 0.474503 61.983158) (layer Edge.Cuts) (width 0.15))

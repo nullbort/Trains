@@ -48,19 +48,6 @@ Text Label 2850 4150 2    50   ~ 0
 LED_B
 Text Notes 4700 1800 0    50   ~ 10
 RGB LEDs
-Text Label 5225 2900 2    50   ~ 0
-LED_B
-$Comp
-L device:R R4
-U 1 1 5AB55869
-P 5375 2900
-F 0 "R4" V 5275 2900 50  0000 C CNN
-F 1 "R" V 5375 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 2900 50  0001 C CNN
-F 3 "" H 5375 2900 50  0001 C CNN
-	1    5375 2900
-	0    1    1    0   
-$EndComp
 $Comp
 L device:LED_CRGB D2
 U 1 1 5AB55912
@@ -75,34 +62,6 @@ $EndComp
 Text Label 5925 3100 0    50   ~ 0
 GND
 $Comp
-L device:R R5
-U 1 1 5AB559DB
-P 5375 3100
-F 0 "R5" V 5300 3100 50  0000 C CNN
-F 1 "R" V 5375 3100 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 3100 50  0001 C CNN
-F 3 "" H 5375 3100 50  0001 C CNN
-	1    5375 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L device:R R6
-U 1 1 5AB55A36
-P 5375 3300
-F 0 "R6" V 5475 3300 50  0000 C CNN
-F 1 "R" V 5375 3300 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 3300 50  0001 C CNN
-F 3 "" H 5375 3300 50  0001 C CNN
-	1    5375 3300
-	0    1    1    0   
-$EndComp
-Text Label 5225 3100 2    50   ~ 0
-LED_G
-Text Label 5225 3300 2    50   ~ 0
-LED_R
-Text Label 5225 3650 2    50   ~ 0
-LED_B
-$Comp
 L device:LED_CRGB D3
 U 1 1 5AB55F0D
 P 5725 3850
@@ -115,10 +74,6 @@ F 3 "~" H 5725 3800 50  0001 C CNN
 $EndComp
 Text Label 5925 3850 0    50   ~ 0
 GND
-Text Label 5225 3850 2    50   ~ 0
-LED_G
-Text Label 5225 4050 2    50   ~ 0
-LED_R
 Wire Notes Line
 	6300 4300 4700 4300
 Text Label 2850 4850 2    50   ~ 0
@@ -242,7 +197,7 @@ U 1 1 5AB5CD07
 P 1450 3425
 F 0 "SW1" H 1450 3200 50  0000 C CNN
 F 1 "SW_SPST4" H 1450 3291 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 1450 3425 50  0001 C CNN
+F 2 "Buttons_Switches_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 1450 3425 50  0001 C CNN
 F 3 "" H 1450 3425 50  0001 C CNN
 	1    1450 3425
 	-1   0    0    1   
@@ -282,50 +237,15 @@ $EndComp
 Text Label 5225 5650 2    50   ~ 0
 Boxcar_LED
 $Comp
-L device:R R7
-U 1 1 5AEB191A
-P 5375 3650
-F 0 "R7" V 5475 3650 50  0000 C CNN
-F 1 "R" V 5375 3650 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 3650 50  0001 C CNN
-F 3 "" H 5375 3650 50  0001 C CNN
-	1    5375 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L device:R R8
-U 1 1 5AEB196A
-P 5375 3850
-F 0 "R8" V 5475 3850 50  0000 C CNN
-F 1 "R" V 5375 3850 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 3850 50  0001 C CNN
-F 3 "" H 5375 3850 50  0001 C CNN
-	1    5375 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L device:R R9
-U 1 1 5AEB19B4
-P 5375 4050
-F 0 "R9" V 5475 4050 50  0000 C CNN
-F 1 "R" V 5375 4050 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 4050 50  0001 C CNN
-F 3 "" H 5375 4050 50  0001 C CNN
-	1    5375 4050
-	0    1    1    0   
-$EndComp
-Text Label 5225 2100 2    50   ~ 0
-LED_B
-$Comp
 L device:R R1
 U 1 1 5AEB1FE3
-P 5375 2100
-F 0 "R1" V 5275 2100 50  0000 C CNN
-F 1 "R" V 5375 2100 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 2100 50  0001 C CNN
-F 3 "" H 5375 2100 50  0001 C CNN
-	1    5375 2100
-	0    1    1    0   
+P 7450 1725
+F 0 "R1" V 7350 1725 50  0000 C CNN
+F 1 "R" V 7450 1725 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7380 1725 50  0001 C CNN
+F 3 "" H 7450 1725 50  0001 C CNN
+	1    7450 1725
+	-1   0    0    1   
 $EndComp
 $Comp
 L device:LED_CRGB D1
@@ -343,33 +263,133 @@ GND
 $Comp
 L device:R R2
 U 1 1 5AEB1FF2
-P 5375 2300
-F 0 "R2" V 5300 2300 50  0000 C CNN
-F 1 "R" V 5375 2300 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 2300 50  0001 C CNN
-F 3 "" H 5375 2300 50  0001 C CNN
-	1    5375 2300
-	0    1    1    0   
+P 7450 2825
+F 0 "R2" V 7375 2825 50  0000 C CNN
+F 1 "R" V 7450 2825 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7380 2825 50  0001 C CNN
+F 3 "" H 7450 2825 50  0001 C CNN
+	1    7450 2825
+	-1   0    0    1   
 $EndComp
 $Comp
 L device:R R3
 U 1 1 5AEB1FF9
-P 5375 2500
-F 0 "R3" V 5475 2500 50  0000 C CNN
-F 1 "R" V 5375 2500 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5305 2500 50  0001 C CNN
-F 3 "" H 5375 2500 50  0001 C CNN
-	1    5375 2500
-	0    1    1    0   
+P 7450 3925
+F 0 "R3" V 7550 3925 50  0000 C CNN
+F 1 "R" V 7450 3925 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7380 3925 50  0001 C CNN
+F 3 "" H 7450 3925 50  0001 C CNN
+	1    7450 3925
+	-1   0    0    1   
 $EndComp
-Text Label 5225 2300 2    50   ~ 0
-LED_G
-Text Label 5225 2500 2    50   ~ 0
-LED_R
 Wire Notes Line
 	6300 1800 4700 1800
 Wire Notes Line
 	4700 1800 4700 4300
 Wire Notes Line
 	6300 1800 6300 4300
+$Comp
+L Transistor:2N3906 Q1
+U 1 1 5AF471A6
+P 7550 2075
+F 0 "Q1" H 7741 2121 50  0000 L CNN
+F 1 "2N3906" H 7741 2030 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 7750 2000 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7550 2075 50  0001 L CNN
+	1    7550 2075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor:2N3906 Q2
+U 1 1 5AF474A8
+P 7550 3175
+F 0 "Q2" H 7741 3221 50  0000 L CNN
+F 1 "2N3906" H 7741 3130 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 7750 3100 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7550 3175 50  0001 L CNN
+	1    7550 3175
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor:2N3906 Q3
+U 1 1 5AF47530
+P 7550 4275
+F 0 "Q3" H 7741 4321 50  0000 L CNN
+F 1 "2N3906" H 7741 4230 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 7750 4200 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7550 4275 50  0001 L CNN
+	1    7550 4275
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:R R4
+U 1 1 5AF47648
+P 7900 2075
+F 0 "R4" V 7693 2075 50  0000 C CNN
+F 1 "R" V 7784 2075 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7830 2075 50  0001 C CNN
+F 3 "" H 7900 2075 50  0001 C CNN
+	1    7900 2075
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R5
+U 1 1 5AF476CD
+P 7900 3175
+F 0 "R5" V 7693 3175 50  0000 C CNN
+F 1 "R" V 7784 3175 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7830 3175 50  0001 C CNN
+F 3 "" H 7900 3175 50  0001 C CNN
+	1    7900 3175
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R6
+U 1 1 5AF478E9
+P 7900 4275
+F 0 "R6" V 7693 4275 50  0000 C CNN
+F 1 "R" V 7784 4275 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7830 4275 50  0001 C CNN
+F 3 "" H 7900 4275 50  0001 C CNN
+	1    7900 4275
+	0    1    1    0   
+$EndComp
+Text Label 3550 3150 0    50   ~ 0
+5V
+Text Label 7450 2275 3    50   ~ 0
+5V
+Text Label 7450 3375 3    50   ~ 0
+5V
+Text Label 7450 4475 3    50   ~ 0
+5V
+Text Label 8050 2075 0    50   ~ 0
+LED_R
+Text Label 8050 3175 0    50   ~ 0
+LED_G
+Text Label 8050 4275 0    50   ~ 0
+LED_B
+Text Label 7450 1575 1    50   ~ 0
+R_OUT
+Text Label 7450 2675 1    50   ~ 0
+G_OUT
+Text Label 7450 3775 1    50   ~ 0
+B_OUT
+Text Label 5525 2500 2    50   ~ 0
+R_OUT
+Text Label 5525 3300 2    50   ~ 0
+R_OUT
+Text Label 5525 4050 2    50   ~ 0
+R_OUT
+Text Label 5525 2300 2    50   ~ 0
+G_OUT
+Text Label 5525 3100 2    50   ~ 0
+G_OUT
+Text Label 5525 3850 2    50   ~ 0
+G_OUT
+Text Label 5525 3650 2    50   ~ 0
+B_OUT
+Text Label 5525 2900 2    50   ~ 0
+B_OUT
+Text Label 5525 2100 2    50   ~ 0
+B_OUT
 $EndSCHEMATC
