@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.0-rc2-dev-unknown-bf135b0~64~ubuntu16.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.0.0-rc2-dev-unknown-904eb82~65~ubuntu16.04.1)
 
   (general
     (thickness 1.6)
-    (drawings 2878)
+    (drawings 2879)
     (tracks 5)
     (zones 0)
     (modules 6)
@@ -410,6 +410,9 @@
     )
   )
 
+  (gr_text "26 12 54" (at 22.098 37.719) (layer F.SilkS)
+    (effects (font (size 1 0.75) (thickness 0.1875)))
+  )
   (gr_line (start 6.35 31.33) (end 6.35 31.91) (layer F.SilkS) (width 0.2))
   (gr_text ▲ (at 6.604 31.623 90) (layer F.SilkS)
     (effects (font (size 0.75 0.75) (thickness 0.125)))

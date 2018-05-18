@@ -289,35 +289,35 @@ Wire Notes Line
 Wire Notes Line
 	6300 1800 6300 4300
 $Comp
-L Transistor:2N3906 Q1
+L Transistor:2N3904 Q1
 U 1 1 5AF471A6
 P 7550 2075
 F 0 "Q1" H 7741 2121 50  0000 L CNN
-F 1 "2N3906" H 7741 2030 50  0000 L CNN
+F 1 "2N3904" H 7741 2030 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 7750 2000 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7550 2075 50  0001 L CNN
+F 3 "" H 7550 2075 50  0001 L CNN
 	1    7550 2075
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor:2N3906 Q2
+L Transistor:2N3904 Q2
 U 1 1 5AF474A8
 P 7550 3175
 F 0 "Q2" H 7741 3221 50  0000 L CNN
-F 1 "2N3906" H 7741 3130 50  0000 L CNN
+F 1 "2N3904" H 7741 3130 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 7750 3100 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7550 3175 50  0001 L CNN
+F 3 "" H 7550 3175 50  0001 L CNN
 	1    7550 3175
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor:2N3906 Q3
+L Transistor:2N3904 Q3
 U 1 1 5AF47530
 P 7550 4275
 F 0 "Q3" H 7741 4321 50  0000 L CNN
-F 1 "2N3906" H 7741 4230 50  0000 L CNN
+F 1 "2N3904" H 7741 4230 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 7750 4200 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7550 4275 50  0001 L CNN
+F 3 "" H 7550 4275 50  0001 L CNN
 	1    7550 4275
 	-1   0    0    -1  
 $EndComp
