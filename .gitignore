@@ -14,3 +14,7 @@ info\.txt
 *.pdf
 
 GERBER/
+
+*.kicad_pcb-bak
+
+*.zip
